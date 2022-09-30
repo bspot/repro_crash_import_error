@@ -1,0 +1,15 @@
+[package]
+name = "repro_crash_import_error"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "repro"
+path = "src/repro.rs"
+
+[[bin]]
+name = "no-repro-without-imports"
+path = "src/no-repro-without-imports.rs"
+
+[dependencies]
+rquickjs = { git="https://github.com/DelSkayn/rquickjs", branch="master", features = [ "loader" ]}
