@@ -1,6 +1,6 @@
 # repro_crash_import_error
 
-Reproduction for an issue in the https://github.com/DelSkayn/rquickjs Rust wrapper for QuickJS.
+Reproduction for [Issue #91](https://github.com/DelSkayn/rquickjs/issues/91) in the https://github.com/DelSkayn/rquickjs Rust wrapper for QuickJS.
 
 It appears that the following sequence of events can lead to a memory corruption that eventually crashes the program:
 
